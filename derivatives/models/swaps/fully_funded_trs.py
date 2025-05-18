@@ -2,7 +2,7 @@
 
 from math import exp
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 
 class FullyFundedTRS(DerivativeModel):

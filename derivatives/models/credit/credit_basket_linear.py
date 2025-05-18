@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Iterable, Sequence
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 
 class CreditBasketLinear(DerivativeModel):

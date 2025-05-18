@@ -4,7 +4,7 @@ from math import exp, log, sqrt
 
 from scipy.stats import norm
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 class QEDIVariableStrikeWarrant(DerivativeModel):
     """European warrant with strike proportional to the underlying spot."""

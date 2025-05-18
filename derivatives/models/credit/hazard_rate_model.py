@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import math
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 
 class HazardRateModel(DerivativeModel):

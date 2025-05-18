@@ -1,4 +1,4 @@
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 class ConvexityAdjustedInterestRateFutures(DerivativeModel):
     """Placeholder for the ConvexityAdjustedInterestRateFutures pricing logic."""

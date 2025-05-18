@@ -3,7 +3,7 @@
 from math import exp
 from typing import Iterable, Tuple
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 
 class TheoreticalDividendFutures(DerivativeModel):

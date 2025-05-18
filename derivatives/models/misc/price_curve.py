@@ -2,7 +2,7 @@
 
 from bisect import bisect_left
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 
 class PriceCurve(DerivativeModel):
