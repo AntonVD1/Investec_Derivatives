@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 
 class FundInstrument(DerivativeModel):

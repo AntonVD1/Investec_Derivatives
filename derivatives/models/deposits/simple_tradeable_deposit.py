@@ -1,6 +1,6 @@
 """Model for a tradeable fixed-rate deposit."""
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 
 class SimpleTradeableDeposit(DerivativeModel):

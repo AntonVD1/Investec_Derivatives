@@ -4,7 +4,7 @@ from math import exp
 
 import numpy as np
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 class BarrierContinuousAnalytic(DerivativeModel):
     """Approximate pricer for continuously monitored barrier options."""

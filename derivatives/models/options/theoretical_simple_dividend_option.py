@@ -4,7 +4,7 @@ from math import exp, log, sqrt
 
 from scipy.stats import norm
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 class TheoreticalSimpleDividendOption(DerivativeModel):
     """Black--Scholes style option on an anticipated dividend payment."""

@@ -37,6 +37,7 @@ The pricing logic still needs to be implemented for each model.
 | Variable Strike Warrant Valuation              | Out       |                                                                     |
 | Simple Tradeable Deposit                       | In        | ETF                                                                  |
 
-Each model lives under `derivatives/models/` and exposes a `price()` method. The current
-implementation simply raises `NotImplementedError` as a placeholder for the actual
-pricing logic.
+Each model lives under `derivatives/models/` and exposes a `price()` method. The
+models are grouped into subpackages (e.g. `options`, `bonds`, `futures`) to make
+the repository easier to navigate. The current implementation simply raises
+`NotImplementedError` as a placeholder for the actual pricing logic.

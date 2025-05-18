@@ -1,6 +1,6 @@
 """Model representing the underlying spot price."""
 
-from .base import DerivativeModel
+from ..base import DerivativeModel
 
 
 class UnderlyingSpot(DerivativeModel):
