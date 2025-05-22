@@ -11,7 +11,7 @@ from .misc.underlying_spot import UnderlyingSpot
 
 # Credit models
 from .credit.credit_basket_linear import CreditBasketLinear
-from .credit.hazard_rate_model import HazardRateModel
+from .credit.static_hazard_rate_model import StaticHazardRateModel
 
 # Bond models
 from .bonds.zero_coupon import ZeroCoupon
