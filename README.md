@@ -13,7 +13,7 @@ The pricing logic still needs to be implemented for each model.
 | Zero Coupon                                    | In        | Only need to test Cross currency swaps with long dated tenors        |
 | Price Curve                                    | In        | Commodity                                                            |
 | Commodity Asian Option                         | In        |                                                                     |
-| Hazard Rate Model                              | In        | FX future/forward, Equity future/forward                             |
+| Static Hazard Rate Model                       | In        | FX future/forward, Equity future/forward                             |
 | Synthetic Underlying Forward                   | In        |                                                                     |
 | Theoretical dividend futures                   | In        |                                                                     |
 | Underlying Spot                                | In        |                                                                     |
@@ -41,3 +41,11 @@ Each model lives under `derivatives/models/` and exposes a `price()` method. The
 models are grouped into subpackages (e.g. `options`, `bonds`, `futures`) to make
 the repository easier to navigate. The current implementation simply raises
 `NotImplementedError` as a placeholder for the actual pricing logic.
+
+## Hazard Rate Models
+
+The ``StaticHazardRateModel`` assumes a single constant default intensity over
+the life of the instrument. In more advanced implementations the hazard rate may
+change over time (a *stepwise* or piecewise-constant approach) or even follow a
+stochastic process. Those models are not included here but are mentioned for
+context.

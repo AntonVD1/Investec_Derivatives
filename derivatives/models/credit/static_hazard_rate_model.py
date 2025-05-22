@@ -5,8 +5,14 @@ import math
 from ..base import DerivativeModel
 
 
-class HazardRateModel(DerivativeModel):
-    """Simple hazard rate model for expected default loss valuation."""
+class StaticHazardRateModel(DerivativeModel):
+    """Static hazard rate model for expected default loss valuation.
+
+    This implementation assumes a **constant** default intensity over the
+    life of the exposure. More sophisticated alternatives include
+    stepwise models (where the hazard rate changes at preset intervals) and
+    stochastic models where the intensity follows a random process.
+    """
 
     def price(
         self,

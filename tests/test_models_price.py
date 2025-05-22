@@ -9,7 +9,7 @@ MODEL_CLASSES = [
     models.ZeroCoupon,
     models.PriceCurve,
     models.CommodityAsianOption,
-    models.HazardRateModel,
+    models.StaticHazardRateModel,
     models.SyntheticUnderlyingForward,
     models.TheoreticalDividendFutures,
     models.UnderlyingSpot,
